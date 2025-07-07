@@ -131,4 +131,4 @@ Palabras clave por tema:
 | **pandas**                     | 1.2.4   | BSD License                        |
 | **numpy**                      | 1.20.1  | BSD License                        |
 
-
+Consulta la documentación oficial de cada paquete para más detalles sobre sus licencias.
