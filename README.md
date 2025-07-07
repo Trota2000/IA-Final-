@@ -5,7 +5,7 @@
  
  Asignatura: Inteligencia Artificial
  
- Obra: El imperio Final(puede usarse cualquiere otros documento)
+ Obra: El imperio Final
  
  Autor: Brandon Sanderson
  
