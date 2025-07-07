@@ -13,19 +13,29 @@
 
 ## Versiones
 
-- **Versión 1.0**: Implementación básica del análisis de texto y consultas interactivas (Fecha: 2025-07-07).
+- **Versión 1.0: Implementación básica del análisis de texto y consultas interactivas (Fecha: 2025-07-07).
+
+- **Versión 2.0: Soporte para análisis de documentos PDF (Fecha: 2025-07-07)
 
 ## Librerías Necesarias
 
 Este proyecto utiliza las siguientes librerías:
 
-- **Python 3**: El lenguaje principal utilizado para escribir el código.
-- **spaCy**: Usado para el procesamiento de lenguaje natural (tokenización, extracción de palabras significativas, etc.). 
-- **nltk**: Para manejo de stopwords (palabras vacías) en el análisis de texto.
-- **sklearn**: Usado para la vectorización **TF-IDF** y el algoritmo de **KMeans** para el clustering temático.
-- **matplotlib**: Utilizado para generar los gráficos (distribución de temas, palabras más frecuentes).
-- **collections**: Para contar las palabras más frecuentes en el texto procesado.
-- **fpdf**: Si deseas generar un PDF del análisis de texto o resultados.
+| Name                           | Version | License                            |
+| ------------------------------ | ------- | ---------------------------------- |
+| **Google Colab**               | -       | -                                  |
+| **re**                         | -       | Python Software Foundation License |
+| **spaCy**                      | 3.0.0   | MIT License                        |
+| **Counter** (from collections) | -       | Python Software Foundation License |
+| **nltk**                       | 3.6.3   | Apache Software License 2.0        |
+| **sklearn**                    | 0.24.2  | BSD License                        |
+| **matplotlib**                 | 3.4.2   | Python Software Foundation License |
+| **pandas**                     | 1.2.4   | BSD License                        |
+| **numpy**                      | 1.20.1  | BSD License                        |
+| **PyPDF2**                     | 1.26.0  | BSD License                        |
+| **pdfplumber**                 | 0.6.2   | MIT License                        |
+| **pymupdf**                    | 1.18.19 | MIT License                        |
+
   
 Puedes instalar las librerías necesarias utilizando el siguiente comando en **Google Colab**:
 
@@ -34,12 +44,16 @@ Puedes instalar las librerías necesarias utilizando el siguiente comando en **G
 !pip install nltk
 !pip install scikit-learn
 !pip install matplotlib
-!pip install fpdf
+!pip install pandas
+!pip install numpy
+!pip install PyPDF2
+!pip install pdfplumber
+!pip install pymupdf
 ```
 ## Descripción del Programa
 Este programa permite realizar un análisis de texto utilizando Google Colab. El cuaderno permite cargar un archivo de texto, procesarlo, realizar un análisis de frecuencia de palabras, aplicar clustering temático y realizar consultas interactivas sobre el contenido. El flujo general sigue los siguientes pasos:
 
-- Carga y Preprocesamiento del Texto: El archivo de texto es cargado y procesado, limpiando caracteres no deseados y normalizando el texto.
+- Carga y Preprocesamiento del Texto: El archivo PDF o texto es cargado y procesado, limpiando caracteres no deseados y normalizando el texto.
 
 - Tokenización y Frecuencia de Palabras: Se tokeniza el texto y se analiza la frecuencia de las palabras, mostrando estadísticas relacionadas con el texto.
 
@@ -53,9 +67,11 @@ Este script fue escrito en Python y se ejecuta en Google Colab, utilizando varia
 Pasos del Script:
 Carga y Preprocesamiento:
 
- - El texto se carga y se limpia utilizando la librería re para eliminar puntuación, números y espacios innecesarios.
+- El texto se carga desde un archivo PDF o TXT utilizando files.upload() en Google Colab.
 
- - spaCy se usa para procesar el texto y extraer las palabras más significativas (sustantivos, verbos, adjetivos).
+- Se utiliza PyPDF2 o pdfplumber para extraer texto de archivos PDF.
+
+- Se realiza un preprocesamiento donde el texto se convierte a minúsculas, se eliminan caracteres no alfanuméricos, números y espacios innecesarios.
 
 Tokenización y Conteo de Palabras:
 
@@ -140,5 +156,9 @@ Palabras clave por tema:
 | **matplotlib**                 | 3.4.2   | Python Software Foundation License |
 | **pandas**                     | 1.2.4   | BSD License                        |
 | **numpy**                      | 1.20.1  | BSD License                        |
+| **PyPDF2**                     | 1.26.0  | BSD License                        |
+| **pdfplumber**                 | 0.6.2   | MIT License                        |
+| **pymupdf**                    | 1.18.19 | MIT License                        |
+
 
 Consulta la documentación oficial de cada paquete para más detalles sobre sus licencias.
