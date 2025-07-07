@@ -26,7 +26,7 @@ Puedes instalar las librerías necesarias utilizando el siguiente comando en **G
 !pip install matplotlib
 !pip install fpdf
 ```
-Descripción del Programa
+## Descripción del Programa
 Este programa permite realizar un análisis de texto utilizando Google Colab. El cuaderno permite cargar un archivo de texto, procesarlo, realizar un análisis de frecuencia de palabras, aplicar clustering temático y realizar consultas interactivas sobre el contenido. El flujo general sigue los siguientes pasos:
 
 - Carga y Preprocesamiento del Texto: El archivo de texto es cargado y procesado, limpiando caracteres no deseados y normalizando el texto.
@@ -37,7 +37,7 @@ Este programa permite realizar un análisis de texto utilizando Google Colab. El
 
 - Consultas Interactivas: Permite a los usuarios realizar consultas interactivas sobre el contenido procesado, como la cantidad de palabras, las palabras clave por tema, y más.
 
-Documentación del Script Usado
+## Documentación del Script Usado
 Este script fue escrito en Python y se ejecuta en Google Colab, utilizando varias bibliotecas populares de análisis de texto, como spaCy, nltk, sklearn, matplotlib, pandas, y numpy.
 
 Pasos del Script:
@@ -65,7 +65,7 @@ Generación de Gráficos:
 
  - Palabras Clave por Tema: Se visualizan las palabras clave más importantes de cada tema.
 
-Gráficos Generados
+## Gráficos Generados
 Distribución de los Temas (Clusters):
 
 - Este gráfico muestra cómo se distribuyen los fragmentos de texto en los diferentes temas generados por KMeans.
@@ -113,7 +113,7 @@ Palabras clave por tema:
 [['malditos' 'malignidad' 'maligna' ... 'lord' 'legislador' 'marsh']]
 
 
-Licencia
+## Licencia
 
 - Este proyecto está bajo las siguientes licencias:
 
