@@ -117,16 +117,16 @@ Licencia
 Este proyecto está bajo las siguientes licencias:
 
 
-| Name                          | Version     | License                                             |
-|-------------------------------|-------------|-----------------------------------------------------|
-| **Google Colab**               | -           | -                                                   |
-| **re**                         | -           | Python Software Foundation License                  |
-| **spaCy**                      | 3.0.0       | MIT License                                         |
-| **Counter** (from collections) | -           | Python Software Foundation License                  |
-| **nltk**                       | 3.6.3       | Apache Software License 2.0                         |
-| **sklearn**                    | 0.24.2      | BSD License                                         |
-| **matplotlib**                 | 3.4.2       | Python Software Foundation License                  |
-| **pandas**                     | 1.2.4       | BSD License                                         |
-| **numpy**                      | 1.20.1      | BSD License                                         |
+| Name                           | Version | License                            |
+| ------------------------------ | ------- | ---------------------------------- |
+| **Google Colab**               | -       | -                                  |
+| **re**                         | -       | Python Software Foundation License |
+| **spaCy**                      | 3.0.0   | MIT License                        |
+| **Counter** (from collections) | -       | Python Software Foundation License |
+| **nltk**                       | 3.6.3   | Apache Software License 2.0        |
+| **sklearn**                    | 0.24.2  | BSD License                        |
+| **matplotlib**                 | 3.4.2   | Python Software Foundation License |
+| **pandas**                     | 1.2.4   | BSD License                        |
+| **numpy**                      | 1.20.1  | BSD License                        |
 
 
