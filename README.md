@@ -67,7 +67,8 @@ Generación de Gráficos:
 
 Gráficos Generados
 Distribución de los Temas (Clusters):
-Este gráfico muestra cómo se distribuyen los fragmentos de texto en los diferentes temas generados por KMeans.
+
+-Este gráfico muestra cómo se distribuyen los fragmentos de texto en los diferentes temas generados por KMeans.
 ```bash
 plt.hist(kmeans.labels_, bins=num_clusters, color='skyblue', rwidth=0.8)
 plt.title("Distribución de temas en el libro")
@@ -79,7 +80,8 @@ plt.show()
 ![Captura de pantalla 2025-07-07 105611](https://github.com/user-attachments/assets/87537bfa-2348-4e4a-853e-7e38a06081e3)
 
 Top 10 Palabras Más Frecuentes:
-Un gráfico de barras visualiza las palabras más frecuentes en el texto, excluyendo las palabras vacías.
+
+-Un gráfico de barras visualiza las palabras más frecuentes en el texto, excluyendo las palabras vacías.
 ```bash
 plt.bar(df_top["Palabra"], df_top["Frecuencia"], color='orange')
 plt.title("Top 10 palabras más frecuentes con significado propio")
@@ -91,7 +93,8 @@ plt.show()
 ![Captura de pantalla 2025-07-07 105630](https://github.com/user-attachments/assets/056ec790-4d09-45f5-94ca-2d552825d370)
 
 Palabras Clave por Tema:
-Los temas generados por KMeans se visualizan mostrando las palabras clave más relevantes para cada tema.
+
+-Los temas generados por KMeans se visualizan mostrando las palabras clave más relevantes para cada tema.
 Palabras clave por tema:
 
 🔹 Tema 1:
