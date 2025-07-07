@@ -114,7 +114,9 @@ Palabras clave por tema:
 
 
 Licencia
-Este proyecto está bajo las siguientes licencias:
+
+- Este proyecto está bajo las siguientes licencias:
+
 
 
 | Name                           | Version | License                            |
