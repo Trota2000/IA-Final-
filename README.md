@@ -42,27 +42,19 @@ Este script fue escrito en Python y se ejecuta en Google Colab, utilizando varia
 
 Pasos del Script:
 Carga y Preprocesamiento:
-
 El texto se carga y se limpia utilizando la librería re para eliminar puntuación, números y espacios innecesarios.
-
 spaCy se usa para procesar el texto y extraer las palabras más significativas (sustantivos, verbos, adjetivos).
 
 Tokenización y Conteo de Palabras:
-
 Se utiliza spaCy para tokenizar el texto y extraer las palabras significativas. Luego, se usa Counter para contar las palabras más frecuentes.
 
 Clustering Temático con KMeans:
-
 Se utiliza KMeans de sklearn para identificar los temas principales en el texto.
-
 El modelo TF-IDF es utilizado para generar una representación numérica del texto, lo cual ayuda a identificar las palabras clave de cada tema.
 
 Generación de Gráficos:
-
 Distribución de los Temas (Clusters): Un gráfico de barras muestra la distribución de los temas encontrados por KMeans.
-
 Top 10 Palabras Más Frecuentes: Un gráfico de barras muestra las palabras más frecuentes en el texto procesado.
-
 Palabras Clave por Tema: Se visualizan las palabras clave más importantes de cada tema.
 
 Gráficos Generados
@@ -108,3 +100,22 @@ Palabras clave por tema:
 
 🔹 Tema 5:
 [['malditos' 'malignidad' 'maligna' ... 'lord' 'legislador' 'marsh']]
+
+
+Licencia
+Este proyecto está bajo las siguientes licencias:
+
+
+| Name                          | Version     | License                                             |
+|-------------------------------|-------------|-----------------------------------------------------|
+| **Google Colab**               | -           | -                                                   |
+| **re**                         | -           | Python Software Foundation License                  |
+| **spaCy**                      | 3.0.0       | MIT License                                         |
+| **Counter** (from collections) | -           | Python Software Foundation License                  |
+| **nltk**                       | 3.6.3       | Apache Software License 2.0                         |
+| **sklearn**                    | 0.24.2      | BSD License                                         |
+| **matplotlib**                 | 3.4.2       | Python Software Foundation License                  |
+| **pandas**                     | 1.2.4       | BSD License                                         |
+| **numpy**                      | 1.20.1      | BSD License                                         |
+
+
