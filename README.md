@@ -29,33 +29,41 @@ Puedes instalar las librerías necesarias utilizando el siguiente comando en **G
 Descripción del Programa
 Este programa permite realizar un análisis de texto utilizando Google Colab. El cuaderno permite cargar un archivo de texto, procesarlo, realizar un análisis de frecuencia de palabras, aplicar clustering temático y realizar consultas interactivas sobre el contenido. El flujo general sigue los siguientes pasos:
 
-Carga y Preprocesamiento del Texto: El archivo de texto es cargado y procesado, limpiando caracteres no deseados y normalizando el texto.
+- Carga y Preprocesamiento del Texto: El archivo de texto es cargado y procesado, limpiando caracteres no deseados y normalizando el texto.
 
-Tokenización y Frecuencia de Palabras: Se tokeniza el texto y se analiza la frecuencia de las palabras, mostrando estadísticas relacionadas con el texto.
+- Tokenización y Frecuencia de Palabras: Se tokeniza el texto y se analiza la frecuencia de las palabras, mostrando estadísticas relacionadas con el texto.
 
-Clustering Temático: Se aplica el algoritmo KMeans de sklearn para identificar los temas principales en el texto y obtener las palabras clave que representan cada tema.
+- Clustering Temático: Se aplica el algoritmo KMeans de sklearn para identificar los temas principales en el texto y obtener las palabras clave que representan cada tema.
 
-Consultas Interactivas: Permite a los usuarios realizar consultas interactivas sobre el contenido procesado, como la cantidad de palabras, las palabras clave por tema, y más.
+- Consultas Interactivas: Permite a los usuarios realizar consultas interactivas sobre el contenido procesado, como la cantidad de palabras, las palabras clave por tema, y más.
 
 Documentación del Script Usado
-Este script fue escrito en Python y se ejecuta en Google Colab, utilizando varias bibliotecas populares de análisis de texto, como spaCy, sklearn y matplotlib.
+Este script fue escrito en Python y se ejecuta en Google Colab, utilizando varias bibliotecas populares de análisis de texto, como spaCy, nltk, sklearn, matplotlib, pandas, y numpy.
 
 Pasos del Script:
-Carga y Preprocesamiento:
-El texto se carga y se limpia utilizando la librería re para eliminar puntuación, números y espacios innecesarios.
-spaCy se usa para procesar el texto y extraer las palabras más significativas (sustantivos, verbos, adjetivos).
+- Carga y Preprocesamiento:
 
-Tokenización y Conteo de Palabras:
-Se utiliza spaCy para tokenizar el texto y extraer las palabras significativas. Luego, se usa Counter para contar las palabras más frecuentes.
+ - El texto se carga y se limpia utilizando la librería re para eliminar puntuación, números y espacios innecesarios.
 
-Clustering Temático con KMeans:
-Se utiliza KMeans de sklearn para identificar los temas principales en el texto.
-El modelo TF-IDF es utilizado para generar una representación numérica del texto, lo cual ayuda a identificar las palabras clave de cada tema.
+ - spaCy se usa para procesar el texto y extraer las palabras más significativas (sustantivos, verbos, adjetivos).
 
-Generación de Gráficos:
-Distribución de los Temas (Clusters): Un gráfico de barras muestra la distribución de los temas encontrados por KMeans.
-Top 10 Palabras Más Frecuentes: Un gráfico de barras muestra las palabras más frecuentes en el texto procesado.
-Palabras Clave por Tema: Se visualizan las palabras clave más importantes de cada tema.
+- Tokenización y Conteo de Palabras:
+
+ - Se utiliza spaCy para tokenizar el texto y extraer las palabras significativas. Luego, se usa Counter de collections para contar las palabras más frecuentes.
+
+- Clustering Temático con KMeans:
+
+- Se utiliza KMeans de sklearn para identificar los temas principales en el texto.
+
+ - El modelo TF-IDF es utilizado para generar una representación numérica del texto, lo cual ayuda a identificar las palabras clave de cada tema.
+
+- Generación de Gráficos:
+
+ - Distribución de los Temas (Clusters): Un gráfico de barras muestra la distribución de los temas encontrados por KMeans.
+
+ - Top 10 Palabras Más Frecuentes: Un gráfico de barras muestra las palabras más frecuentes en el texto procesado.
+
+ - Palabras Clave por Tema: Se visualizan las palabras clave más importantes de cada tema.
 
 Gráficos Generados
 Distribución de los Temas (Clusters):
