@@ -79,7 +79,7 @@ plt.show()
 ```
 ![Captura de pantalla 2025-07-07 105611](https://github.com/user-attachments/assets/87537bfa-2348-4e4a-853e-7e38a06081e3)
 
-Top 10 Palabras Más Frecuentes:
+Listado de 10 Palabras Más Frecuentes:
 
 - Un gráfico de barras visualiza las palabras más frecuentes en el texto, excluyendo las palabras vacías.
 ```bash
