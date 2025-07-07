@@ -20,8 +20,12 @@ Este proyecto utiliza las siguientes librerías:
 Puedes instalar las librerías necesarias utilizando el siguiente comando en **Google Colab**:
 
 ```bash
-!pip install spacy nltk scikit-learn matplotlib fpdf
-
+!pip install spacy
+!pip install nltk
+!pip install scikit-learn
+!pip install matplotlib
+!pip install fpdf
+```
 Descripción del Programa
 Este programa permite realizar un análisis de texto utilizando Google Colab. El cuaderno permite cargar un archivo de texto, procesarlo, realizar un análisis de frecuencia de palabras, aplicar clustering temático y realizar consultas interactivas sobre el contenido. El flujo general sigue los siguientes pasos:
 
@@ -72,7 +76,10 @@ plt.ylabel("Cantidad de fragmentos")
 plt.grid(True)
 plt.show()
 
-![Captura de pantalla 2025-07-07 105611](https://github.com/user-attachments/assets/713354b9-0b5a-4717-bc46-b3e1ade29d30)
+![Captura de pantalla 2025-07-07 105611](https://github.com/user-attachments/assets/87537bfa-2348-4e4a-853e-7e38a06081e3)
+
+Top 10 Palabras Más Frecuentes:
+Un gráfico de barras visualiza las palabras más frecuentes en el texto, excluyendo las palabras vacías.
 
 plt.bar(df_top["Palabra"], df_top["Frecuencia"], color='orange')
 plt.title("Top 10 palabras más frecuentes con significado propio")
@@ -81,4 +88,7 @@ plt.ylabel("Frecuencia")
 plt.grid(True)
 plt.show()
 
-![Captura de pantalla 2025-07-07 105630](https://github.com/user-attachments/assets/c229d1e6-f51a-4aeb-b694-9e2293e10bc6)
+![Captura de pantalla 2025-07-07 105630](https://github.com/user-attachments/assets/056ec790-4d09-45f5-94ca-2d552825d370)
+
+Palabras Clave por Tema:
+Los temas generados por KMeans se visualizan mostrando las palabras clave más relevantes para cada tema.
