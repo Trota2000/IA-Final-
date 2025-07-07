@@ -1,4 +1,9 @@
 # IA-Final-
+ Estudiante: Diego Troche
+ Docente: Ing. Richard Nuñez
+ Asignatura: Inteligencia Artificial
+ Obra: El imperio Final(puede usarse cualquiere otros documento)
+ Autor: Brandon Sanderson
 # Análisis de Texto con Google Colab
 
 ## Versiones
