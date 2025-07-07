@@ -92,3 +92,19 @@ plt.show()
 
 Palabras Clave por Tema:
 Los temas generados por KMeans se visualizan mostrando las palabras clave más relevantes para cada tema.
+Palabras clave por tema:
+
+🔹 Tema 1:
+[['transigido' 'dejándolo' 'dejándoles' ... 'camon' 'vin' 'kelsier']]
+
+🔹 Tema 2:
+[['maltrechos' 'malhumorada' 'maliciosa' ... 'venture' 'vin' 'elend']]
+
+🔹 Tema 3:
+[['ex' 'recorrido' 'recorriendo' ... 'dockson' 'brisa' 'kelsier']]
+
+🔹 Tema 4:
+[['mina' 'migajas' 'milagro' ... 'soldados' 'inquisidor' 'kelsier']]
+
+🔹 Tema 5:
+[['malditos' 'malignidad' 'maligna' ... 'lord' 'legislador' 'marsh']]
